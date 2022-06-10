@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Unit Testing Demo
+
+Take a look at the examples in `src/components`, use the command `npm test` to run the tests.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

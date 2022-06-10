@@ -3,17 +3,17 @@
 // React Testing Library, a collection of tools
 // for testing React components.
 
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function HelloComponent({ name }) {
-  return <h1>Hello {name}!</h1>;
+	return <h1>Hello {name}!</h1>;
 }
 
 HelloComponent.propTypes = {
-  name: PropTypes.string
+	name: PropTypes.string,
 };
 
 HelloComponent.defaultProps = {
-  name: "Person"
+	name: 'Person',
 };

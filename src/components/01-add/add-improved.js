@@ -1,11 +1,13 @@
+/* eslint-disable no-restricted-syntax */
+
 export default function add(...args) {
-  let result = 0;
+	let result = 0;
 
-  for (const arg of args) {
-    if (typeof arg === "number" && !isNaN(arg)) {
-      result += arg;
-    }
-  }
+	for (const arg of args) {
+		if (typeof arg === 'number' && !Number.isNaN(arg)) {
+			result += arg;
+		}
+	}
 
-  return result;
+	return result;
 }
