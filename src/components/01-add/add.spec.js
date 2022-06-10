@@ -21,16 +21,16 @@ describe('add function', () => {
 	// test them all
 
 	/*
-  it("Discards non-numeric input", () => {
-    const input = [1, "a", 3];
-    const result = add(...input);
-    expect(result).toBe(4);
-  });
+	it('Discards non-numeric input', () => {
+		const input = [1, 'a', 3];
+		const result = add(...input);
+		expect(result).toBe(4);
+	});
 
-  it("Discards NaN input", () => {
-    const input = [1, NaN, 3];
-    const result = add(...input);
-    expect(result).toBe(4);
-  });
-  */
+	it('Discards NaN input', () => {
+		const input = [1, NaN, 3];
+		const result = add(...input);
+		expect(result).toBe(4);
+	});
+	*/
 });
