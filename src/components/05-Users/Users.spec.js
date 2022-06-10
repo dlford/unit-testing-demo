@@ -36,8 +36,6 @@ jest.mock('./useApi', () => ({
 
 describe('Users Component', () => {
 	it('Renders a list of users', async () => {
-		// This time we're importing 'screen' from the testing library
-		// as well, it works the same as before, just a different syntax
 		render(<Users />);
 
 		// Wait for the mocked response to resolve before checking the
