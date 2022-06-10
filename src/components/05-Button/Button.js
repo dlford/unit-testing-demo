@@ -5,11 +5,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({ action, children }) {
-	return <Button onClick={action}>{children}</Button>;
+export default function ButtonComponent({ action, children }) {
+	return (
+		<button
+			type='button'
+			onClick={action}
+		>
+			{children}
+		</button>
+	);
 }
 
-Button.propTypes = {
+ButtonComponent.propTypes = {
 	action: PropTypes.func.isRequired,
 	children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 		.isRequired,
