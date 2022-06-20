@@ -6,6 +6,15 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import useApi from './useApi';
 
+/**
+ * Renders a list of usernames
+ *
+ * @example
+ * return (
+ *   <UsersComponent />
+ * )
+ */
+
 export default function UsersComponent() {
 	const [users, setUsers] = useState([]);
 	const { getUsers } = useApi();

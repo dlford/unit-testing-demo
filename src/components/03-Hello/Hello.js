@@ -6,11 +6,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Renders an `h1` with the text
+ * "Hello" followed by a name.
+ *
+ * @component
+ * @example
+ * return (
+ *   <HelloComponent name='Bob' />
+ * );
+ */
+
 export default function HelloComponent({ name }) {
 	return <h1>Hello {name}!</h1>;
 }
 
 HelloComponent.propTypes = {
+	/** User's name */
 	name: PropTypes.string,
 };
 

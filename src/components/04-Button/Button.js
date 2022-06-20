@@ -5,6 +5,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Renders a button with an `onClick` action
+ *
+ * @component
+ * @example
+ * function action (event) {
+ *   event.preventDefault();
+ * }
+ *
+ * return (
+ *   <ButtonComponent action={action}>
+ *     Click Me!
+ *   </ButtonComponent>
+ * );
+ */
+
 export default function ButtonComponent({ action, children }) {
 	return (
 		<button
@@ -17,7 +33,9 @@ export default function ButtonComponent({ action, children }) {
 }
 
 ButtonComponent.propTypes = {
+	/** Button click handler */
 	action: PropTypes.func.isRequired,
+	/** Button contents */
 	children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 		.isRequired,
 };
